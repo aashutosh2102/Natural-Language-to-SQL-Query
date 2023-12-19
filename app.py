@@ -1,4 +1,3 @@
-from turtle import width
 import streamlit as st
 from sqlalchemy import create_engine, inspect, text
 from typing import Dict, Any
@@ -13,8 +12,7 @@ from llama_index.llms import OpenAI
 import openai
 import os
 import pandas as pd
-import google.generativeai as palm
-from llama_index.llms.palm import PaLM
+# Removed the import of turtle
 
 from llama_index import (
     SimpleDirectoryReader,
@@ -27,7 +25,6 @@ import sqlite3
 
 from llama_index import SQLDatabase, ServiceContext
 from llama_index.indices.struct_store import NLSQLTableQueryEngine
-
 os.environ['GOOGLE_API_KEY'] = 'AIzaSyDmUelrOUNox7B1XiB69E0deTRs-n7qFgc'
 
 
