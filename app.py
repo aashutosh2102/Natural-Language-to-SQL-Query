@@ -8,14 +8,16 @@
 import streamlit as st
 from sqlalchemy import create_engine, inspect, text
 from typing import Dict, Any
+from llama_index.core import *
 # from llama_index.core import VectorStoreIndex
 from llama_index.core import (
     VectorStoreIndex,
     ServiceContext,
     download_loader,
 )
-from llama_index.llama_pack.base import BaseLlamaPack
-from llama_index.llms import OpenAI
+# from llama_index.core.query_engine import ...
+from llama_index.core.llama_pack.base import BaseLlamaPack
+from llama_index.core.llms import OpenAI
 import openai
 import os
 import pandas as pd
