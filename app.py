@@ -17,13 +17,13 @@ from llama_index.core import (
 )
 # from llama_index.core.query_engine import ...
 from llama_index.core.llama_pack.base import BaseLlamaPack
-from llama_index.core.llms import OpenAI
+from llama_index.llms import OpenAI
 import openai
 import os
 import pandas as pd
 # Removed the import of turtle
 
-from llama_index.core import (
+from llama_index import (
     SimpleDirectoryReader,
     ServiceContext,
     StorageContext,
@@ -32,9 +32,9 @@ from llama_index.core import (
 )
 import sqlite3
 
-from llama_index.core import SQLDatabase, ServiceContext
-from llama_index.core.indices.struct_store import NLSQLTableQueryEngine
-from llama_index.core.llms.palm import PaLM # Added new - AJ
+from llama_index import SQLDatabase, ServiceContext
+from llama_index.indices.struct_store import NLSQLTableQueryEngine
+from llama_index.llms.palm import PaLM # Added new - AJ
 os.environ['GOOGLE_API_KEY'] = 'AIzaSyDmUelrOUNox7B1XiB69E0deTRs-n7qFgc'
 
 
