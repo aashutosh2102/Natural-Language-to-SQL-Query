@@ -1,9 +1,9 @@
-%pip install llama-index-llms-openai
-%pip install llama-index-embeddings-openai
-%pip install llama-index-graph-stores-nebula
-%pip install llama-index-llms-azure-openai
+!pip install llama-index-llms-openai
+!pip install llama-index-embeddings-openai
+!pip install llama-index-graph-stores-nebula
+!pip install llama-index-llms-azure-openai
 
-%pip install -r requirements.txt
+!pip install -r requirements.txt
 
 import streamlit as st
 from sqlalchemy import create_engine, inspect, text
