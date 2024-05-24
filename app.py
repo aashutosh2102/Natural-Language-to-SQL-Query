@@ -8,7 +8,7 @@
 import streamlit as st
 from sqlalchemy import create_engine, inspect, text
 from typing import Dict, Any
-from llama_index.core import *
+# from llama_index.core import *
 # from llama_index.core import VectorStoreIndex
 from llama_index.core import (
     VectorStoreIndex,
@@ -23,7 +23,7 @@ import os
 import pandas as pd
 # Removed the import of turtle
 
-from llama_index import (
+from llama_index.core import (
     SimpleDirectoryReader,
     ServiceContext,
     StorageContext,
@@ -32,9 +32,9 @@ from llama_index import (
 )
 import sqlite3
 
-from llama_index import SQLDatabase, ServiceContext
-from llama_index.indices.struct_store import NLSQLTableQueryEngine
-from llama_index.llms.palm import PaLM # Added new - AJ
+from llama_index.core import SQLDatabase, ServiceContext
+from llama_index.core.indices.struct_store import NLSQLTableQueryEngine
+from llama_index.core.llms.palm import PaLM # Added new - AJ
 os.environ['GOOGLE_API_KEY'] = 'AIzaSyDmUelrOUNox7B1XiB69E0deTRs-n7qFgc'
 
 
