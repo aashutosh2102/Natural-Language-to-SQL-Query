@@ -1,8 +1,8 @@
 import streamlit as st
 from sqlalchemy import create_engine, inspect, text
 from typing import Dict, Any
-
-from llama_index import (
+# from llama_index.core import VectorStoreIndex
+from llama_index.core import (
     VectorStoreIndex,
     ServiceContext,
     download_loader,
